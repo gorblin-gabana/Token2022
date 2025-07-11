@@ -14,8 +14,8 @@ use {
         },
         zk_elgamal_proof_program::proof_data::ZeroCiphertextProofData,
     },
-    spl_pod::primitives::PodU64,
-    spl_token_confidential_transfer_proof_generation::{
+    gorb_pod::primitives::PodU64,
+    gorb_ctpg::{
         transfer::{transfer_split_proof_data, TransferProofData},
         transfer_with_fee::{transfer_with_fee_split_proof_data, TransferWithFeeProofData},
         withdraw::{withdraw_proof_data, WithdrawProofData},

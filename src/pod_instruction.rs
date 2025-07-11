@@ -8,7 +8,7 @@ use {
         program_error::ProgramError,
         pubkey::{Pubkey, PUBKEY_BYTES},
     },
-    spl_pod::{
+    gorb_pod::{
         bytemuck::{pod_from_bytes, pod_get_packed_len},
         primitives::PodU64,
     },

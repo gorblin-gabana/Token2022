@@ -9,7 +9,7 @@ use {
     solana_program::{
         instruction::get_processed_sibling_instruction, program_error::ProgramError, pubkey::Pubkey,
     },
-    spl_pod::primitives::PodBool,
+    gorb_pod::primitives::PodBool,
 };
 
 /// Memo Transfer extension instructions

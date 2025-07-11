@@ -35,7 +35,7 @@ use {
             },
         },
     },
-    spl_token_confidential_transfer_proof_extraction::instruction::{
+    gorb_ct_proof_extraction::instruction::{
         process_proof_location, ProofLocation,
     },
 };

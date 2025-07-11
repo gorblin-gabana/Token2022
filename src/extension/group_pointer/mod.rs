@@ -3,7 +3,7 @@ use serde::{Deserialize, Serialize};
 use {
     crate::extension::{Extension, ExtensionType},
     bytemuck::{Pod, Zeroable},
-    spl_pod::optional_keys::OptionalNonZeroPubkey,
+    gorb_pod::optional_keys::OptionalNonZeroPubkey,
 };
 
 /// Instructions for the `GroupPointer` extension

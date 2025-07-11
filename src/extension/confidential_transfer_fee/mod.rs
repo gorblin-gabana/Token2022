@@ -6,8 +6,8 @@ use {
     bytemuck::{Pod, Zeroable},
     solana_program::entrypoint::ProgramResult,
     solana_zk_sdk::encryption::pod::elgamal::{PodElGamalCiphertext, PodElGamalPubkey},
-    spl_pod::{optional_keys::OptionalNonZeroPubkey, primitives::PodBool},
-    spl_token_confidential_transfer_proof_extraction::encryption::PodFeeCiphertext,
+    gorb_pod::{optional_keys::OptionalNonZeroPubkey, primitives::PodBool},
+    gorb_ct_proof_extraction::encryption::PodFeeCiphertext,
 };
 
 /// Confidential transfer fee extension instructions

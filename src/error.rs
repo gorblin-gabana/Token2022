@@ -1,7 +1,7 @@
 //! Error types
 
 #[cfg(not(target_os = "solana"))]
-use spl_token_confidential_transfer_proof_generation::errors::TokenProofGenerationError;
+use gorb_ctpg::errors::TokenProofGenerationError;
 use {
     num_derive::FromPrimitive,
     solana_program::{
@@ -9,7 +9,7 @@ use {
         msg,
         program_error::{PrintProgramError, ProgramError},
     },
-    spl_token_confidential_transfer_proof_extraction::errors::TokenProofExtractionError,
+    gorb_ct_proof_extraction::errors::TokenProofExtractionError,
     thiserror::Error,
 };
 

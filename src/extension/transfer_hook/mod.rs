@@ -10,7 +10,7 @@ use {
     },
     bytemuck::{Pod, Zeroable},
     solana_program::{account_info::AccountInfo, program_error::ProgramError, pubkey::Pubkey},
-    spl_pod::{optional_keys::OptionalNonZeroPubkey, primitives::PodBool},
+    gorb_pod::{optional_keys::OptionalNonZeroPubkey, primitives::PodBool},
 };
 
 /// Instructions for the `TransferHook` extension

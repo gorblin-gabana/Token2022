@@ -1651,6 +1651,10 @@ dependencies = [
  "arrayref",
  "base64 0.22.1",
  "bytemuck",
+ "gorb-ct-ciphertext-arithmetic",
+ "gorb-ct-proof-extraction",
+ "gorb-ctpg",
+ "gorb-pod",
  "gorb-token",
  "lazy_static",
  "num-derive",
@@ -1668,15 +1672,68 @@ dependencies = [
  "solana-zk-sdk",
  "spl-elgamal-registry",
  "spl-memo",
- "spl-pod",
  "spl-tlv-account-resolution",
- "spl-token-confidential-transfer-ciphertext-arithmetic",
- "spl-token-confidential-transfer-proof-extraction",
- "spl-token-confidential-transfer-proof-generation",
  "spl-token-group-interface",
  "spl-token-metadata-interface",
  "spl-transfer-hook-interface",
  "spl-type-length-value",
+ "thiserror 2.0.12",
+]
+
+[[package]]
+name = "gorb-ct-ciphertext-arithmetic"
+version = "1.0.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e6ba4eb72400f0a779cd7c95f68a10be35c3cee5d8e6434b340ba538d735b96a"
+dependencies = [
+ "base64 0.22.1",
+ "bytemuck",
+ "solana-curve25519",
+ "solana-zk-sdk",
+]
+
+[[package]]
+name = "gorb-ct-proof-extraction"
+version = "1.0.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "63c9a320e51cf9536a2c7529c8fb4028595ddb29c06de93ddfc5cfae76ae2154"
+dependencies = [
+ "bytemuck",
+ "gorb-pod",
+ "solana-curve25519",
+ "solana-program",
+ "solana-zk-sdk",
+ "thiserror 2.0.12",
+]
+
+[[package]]
+name = "gorb-ctpg"
+version = "1.0.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "35d835f63f5e497580624c5ce7f44a77774626435fb696a7993f98e9614d709b"
+dependencies = [
+ "curve25519-dalek 4.2.0",
+ "solana-zk-sdk",
+ "thiserror 2.0.12",
+]
+
+[[package]]
+name = "gorb-pod"
+version = "1.0.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "448416dfecbafb011f30f191bb54e1e0a7bd0acb8dbd593012d1d66780ef060f"
+dependencies = [
+ "bytemuck",
+ "bytemuck_derive",
+ "num-derive",
+ "num-traits",
+ "serde",
+ "solana-decode-error",
+ "solana-msg",
+ "solana-program-error",
+ "solana-program-option",
+ "solana-pubkey",
+ "solana-zk-sdk",
  "thiserror 2.0.12",
 ]
 
@@ -7139,7 +7196,6 @@ dependencies = [
  "bytemuck_derive",
  "num-derive",
  "num-traits",
- "serde",
  "solana-decode-error",
  "solana-msg",
  "solana-program-error",
@@ -7197,18 +7253,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "spl-token-confidential-transfer-ciphertext-arithmetic"
-version = "0.2.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "170378693c5516090f6d37ae9bad2b9b6125069be68d9acd4865bbe9fc8499fd"
-dependencies = [
- "base64 0.22.1",
- "bytemuck",
- "solana-curve25519",
- "solana-zk-sdk",
-]
-
-[[package]]
 name = "spl-token-confidential-transfer-proof-extraction"
 version = "0.2.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -7220,17 +7264,6 @@ dependencies = [
  "solana-zk-sdk",
  "spl-pod",
  "thiserror 2.0.12",
-]
-
-[[package]]
-name = "spl-token-confidential-transfer-proof-generation"
-version = "0.2.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "8627184782eec1894de8ea26129c61303f1f0adeed65c20e0b10bc584f09356d"
-dependencies = [
- "curve25519-dalek 4.2.0",
- "solana-zk-sdk",
- "thiserror 1.0.69",
 ]
 
 [[package]]

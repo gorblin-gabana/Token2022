@@ -213,7 +213,7 @@ mod tests {
         },
         solana_program::{instruction::AccountMeta, program_option::COption},
         solana_program_test::tokio,
-        spl_pod::optional_keys::OptionalNonZeroPubkey,
+        gorb_pod::optional_keys::OptionalNonZeroPubkey,
         spl_tlv_account_resolution::{
             account::ExtraAccountMeta, seeds::Seed, state::ExtraAccountMetaList,
         },

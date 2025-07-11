@@ -114,7 +114,7 @@ pub fn check_program_account(spl_token_program_id: &Pubkey) -> ProgramResult {
 /// Checks that the supplied program ID is correct for spl-token or
 /// spl-token-2022
 pub fn check_spl_token_program_account(spl_token_program_id: &Pubkey) -> ProgramResult {
-    if spl_token_program_id != &id() && spl_token_program_id != &spl_token::id() {
+    if spl_token_program_id != &id() && spl_token_program_id != &gorb_token::id() {
         return Err(ProgramError::IncorrectProgramId);
     }
     Ok(())

@@ -20,7 +20,7 @@ use {
         pubkey::Pubkey,
         system_program, sysvar,
     },
-    spl_token_confidential_transfer_proof_extraction::instruction::{ProofData, ProofLocation},
+    gorb_ct_proof_extraction::instruction::{ProofData, ProofLocation},
 };
 
 /// Confidential Transfer extension instructions

@@ -7,7 +7,7 @@ use {
     },
     bytemuck::{Pod, Zeroable},
     solana_program::program_error::ProgramError,
-    spl_pod::{optional_keys::OptionalNonZeroPubkey, primitives::PodI64},
+    gorb_pod::{optional_keys::OptionalNonZeroPubkey, primitives::PodI64},
 };
 
 /// Scaled UI amount extension instructions

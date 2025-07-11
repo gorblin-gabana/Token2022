@@ -19,7 +19,7 @@ use {
         },
         zk_elgamal_proof_program::proof_data::CiphertextCiphertextEqualityProofData,
     },
-    spl_token_confidential_transfer_proof_generation::{
+    gorb_ctpg::{
         burn::{burn_split_proof_data, BurnProofData},
         mint::{mint_split_proof_data, MintProofData},
     },

@@ -11,7 +11,7 @@ use {
         BatchedRangeProofU128Data, CiphertextCommitmentEqualityProofContext,
         CiphertextCommitmentEqualityProofData,
     },
-    spl_token_confidential_transfer_proof_extraction::{
+    gorb_ct_proof_extraction::{
         burn::BurnProofContext, instruction::verify_and_extract_context, mint::MintProofContext,
     },
     std::slice::Iter,

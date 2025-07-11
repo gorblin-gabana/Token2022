@@ -7,7 +7,7 @@ use {
     },
     bytemuck::{Pod, Zeroable},
     solana_program::{clock::Epoch, entrypoint::ProgramResult},
-    spl_pod::{
+    gorb_pod::{
         optional_keys::OptionalNonZeroPubkey,
         primitives::{PodU16, PodU64},
     },

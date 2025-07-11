@@ -1,6 +1,6 @@
 // Remove feature once zk ops syscalls are enabled on all networks
 #[cfg(feature = "zk-ops")]
-use spl_token_confidential_transfer_ciphertext_arithmetic as ciphertext_arithmetic;
+use gorb_ct_ciphertext_arithmetic as ciphertext_arithmetic;
 use {
     crate::{
         check_program_account,
@@ -37,8 +37,8 @@ use {
         program_error::ProgramError,
         pubkey::Pubkey,
     },
-    spl_pod::optional_keys::OptionalNonZeroPubkey,
-    spl_token_confidential_transfer_proof_extraction::instruction::verify_and_extract_context,
+    gorb_pod::optional_keys::OptionalNonZeroPubkey,
+    gorb_ct_proof_extraction::instruction::verify_and_extract_context,
 };
 
 /// Processes an [`InitializeConfidentialTransferFeeConfig`] instruction.

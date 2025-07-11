@@ -3,7 +3,7 @@ use serde::{Deserialize, Serialize};
 use {
     crate::extension::{Extension, ExtensionType},
     bytemuck::{Pod, Zeroable},
-    spl_pod::{optional_keys::OptionalNonZeroPubkey, primitives::PodBool},
+    gorb_pod::{optional_keys::OptionalNonZeroPubkey, primitives::PodBool},
 };
 
 /// Instruction types for the pausable extension

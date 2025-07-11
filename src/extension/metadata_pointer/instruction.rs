@@ -12,7 +12,7 @@ use {
         program_error::ProgramError,
         pubkey::Pubkey,
     },
-    spl_pod::optional_keys::OptionalNonZeroPubkey,
+    gorb_pod::optional_keys::OptionalNonZeroPubkey,
     std::convert::TryInto,
 };
 

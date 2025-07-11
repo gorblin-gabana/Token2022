@@ -24,7 +24,7 @@ use {
         pubkey::Pubkey,
         sysvar::Sysvar,
     },
-    spl_pod::optional_keys::OptionalNonZeroPubkey,
+    gorb_pod::optional_keys::OptionalNonZeroPubkey,
 };
 
 fn try_validate_multiplier(multiplier: &PodF64) -> ProgramResult {

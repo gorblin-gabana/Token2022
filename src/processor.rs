@@ -54,7 +54,7 @@ use {
         system_instruction, system_program,
         sysvar::{rent::Rent, Sysvar},
     },
-    spl_pod::{
+    gorb_pod::{
         bytemuck::{pod_from_bytes, pod_from_bytes_mut},
         primitives::{PodBool, PodU64},
     },

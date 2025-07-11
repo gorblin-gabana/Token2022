@@ -3,7 +3,7 @@
 use {
     crate::extension::confidential_mint_burn::ConfidentialMintBurn,
     crate::extension::non_transferable::NonTransferableAccount,
-    spl_token_confidential_transfer_ciphertext_arithmetic as ciphertext_arithmetic,
+    gorb_ct_ciphertext_arithmetic as ciphertext_arithmetic,
 };
 use {
     crate::{
@@ -39,8 +39,8 @@ use {
         sysvar::{rent::Rent, Sysvar},
     },
     spl_elgamal_registry::state::ElGamalRegistry,
-    spl_pod::bytemuck::pod_from_bytes,
-    spl_token_confidential_transfer_proof_extraction::{
+    gorb_pod::bytemuck::pod_from_bytes,
+    gorb_ct_proof_extraction::{
         instruction::verify_and_extract_context, transfer::TransferProofContext,
         transfer_with_fee::TransferWithFeeProofContext,
     },

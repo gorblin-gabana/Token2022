@@ -24,8 +24,8 @@ use {
         pubkey::Pubkey,
         sysvar,
     },
-    spl_pod::optional_keys::OptionalNonZeroPubkey,
-    spl_token_confidential_transfer_proof_extraction::instruction::{ProofData, ProofLocation},
+    gorb_pod::optional_keys::OptionalNonZeroPubkey,
+    gorb_ct_proof_extraction::instruction::{ProofData, ProofLocation},
     std::convert::TryFrom,
 };
 

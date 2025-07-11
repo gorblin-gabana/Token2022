@@ -21,7 +21,7 @@ use {
         msg,
         pubkey::Pubkey,
     },
-    spl_pod::optional_keys::OptionalNonZeroPubkey,
+    gorb_pod::optional_keys::OptionalNonZeroPubkey,
 };
 
 fn process_initialize(

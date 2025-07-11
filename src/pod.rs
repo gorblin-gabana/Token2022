@@ -12,7 +12,7 @@ use {
         program_error::ProgramError, program_option::COption, program_pack::IsInitialized,
         pubkey::Pubkey,
     },
-    spl_pod::{
+    gorb_pod::{
         bytemuck::pod_get_packed_len,
         optional_keys::OptionalNonZeroPubkey,
         primitives::{PodBool, PodU64},
@@ -272,7 +272,7 @@ pub mod test {
             },
             AccountState,
         },
-        spl_pod::bytemuck::pod_from_bytes,
+        gorb_pod::bytemuck::pod_from_bytes,
     };
 
     pub const TEST_POD_MINT: PodMint = PodMint {

@@ -37,7 +37,7 @@ use {
         program_error::ProgramError,
         program_pack::{IsInitialized, Pack},
     },
-    spl_pod::{
+    gorb_pod::{
         bytemuck::{pod_from_bytes, pod_from_bytes_mut, pod_get_packed_len},
         primitives::PodU16,
     },
@@ -1564,7 +1564,7 @@ mod test {
             entrypoint::MAX_PERMITTED_DATA_INCREASE,
             pubkey::Pubkey,
         },
-        spl_pod::{
+        gorb_pod::{
             bytemuck::pod_bytes_of,
             optional_keys::OptionalNonZeroPubkey,
             primitives::{PodBool, PodU64},
