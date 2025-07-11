@@ -19,8 +19,8 @@ use {
     solana_zk_sdk::zk_elgamal_proof_program::proof_data::pubkey_validity::{
         PubkeyValidityProofContext, PubkeyValidityProofData,
     },
-    spl_pod::bytemuck::pod_from_bytes_mut,
-    spl_token_confidential_transfer_proof_extraction::instruction::verify_and_extract_context,
+    gorb_pod::bytemuck::pod_from_bytes_mut,
+    gorb_ct_proof_extraction::instruction::verify_and_extract_context,
 };
 
 /// Processes `CreateRegistry` instruction

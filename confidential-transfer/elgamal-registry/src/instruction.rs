@@ -9,7 +9,7 @@ use {
     solana_zk_sdk::zk_elgamal_proof_program::{
         instruction::ProofInstruction, proof_data::PubkeyValidityProofData,
     },
-    spl_token_confidential_transfer_proof_extraction::instruction::{ProofData, ProofLocation},
+    gorb_ct_proof_extraction::instruction::{ProofData, ProofLocation},
 };
 
 #[derive(Clone, Debug, PartialEq)]
